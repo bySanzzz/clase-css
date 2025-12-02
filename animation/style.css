@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.loader{
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(from 0deg,
+  #00f2ff, #009dff, #0048ff, #5e00ff, #00f2ff
+);
+    border-radius: 50%;
+}
+.center-loader{
+    
+}
+
+@keyframes girar {
+    0% {
+
+    }
+    100%{
+
+    }
+}
