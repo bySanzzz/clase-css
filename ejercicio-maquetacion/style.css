@@ -1,0 +1,97 @@
+/* Reset general para asegurar consistencia en todos los navegadores */
+* {
+  margin: 0; /* Quita márgenes por defecto */
+  padding: 0; /* Quita el padding por defecto */
+  box-sizing: border-box; /* Hace que el tamaño incluya padding y borde */
+  font-family: "Overpass", sans-serif; /* Fuente global */
+}
+
+/* Estilos generales del body */
+body {
+  background-color: hsl(216, 12%, 8%); /* Fondo oscuro general */
+  color: white; /* Texto blanco por defecto */
+  display: flex; /* Activa flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
+
+/* Contenedor principal tipo card */
+.container-card {
+  background-color: hsl(213, 19%, 18%); /* Fondo gris azulado */
+  width: 350px; /* Ancho fijo de la tarjeta */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 20px; /* Bordes redondeados */
+}
+
+/* Estilos de la imagen/icono */
+img {
+  background-color: hsl(214, 13%, 24%); /* Fondo circular detrás de la imagen */
+  padding: 10px; /* Espaciado interno para que parezca un ícono */
+  border-radius: 50%; /* Forma circular */
+  margin-bottom: 20px; /* Separación con el contenido inferior */
+}
+
+/* Estilo del título */
+h2 {
+  font-weight: 800; /* Título en negrita fuerte */
+}
+
+/* Estilo de los párrafos */
+p {
+  font-size: 14px; /* Tamaño de texto */
+  color: gray; /* Color de texto gris */
+  margin: 10px 0; /* Separación vertical */
+}
+
+/* Contenedor de los botones de puntuación */
+form ul {
+  display: flex; /* Coloca los elementos en línea */
+  list-style: none; /* Quita los puntos de lista */
+  justify-content: space-between; /* Distribuye uniformemente */
+}
+
+/* Botones circulares de puntuación */
+.feedback-input {
+  background-color: hsl(214, 13%, 24%); /* Fondo gris azulado */
+  padding: 10px; /* Espaciado interno */
+  width: 40px; /* Ancho del círculo */
+  height: 40px; /* Alto del círculo */
+  border: none; /* Quita borde por defecto */
+  border-radius: 50%; /* Forma circular */
+  color: gray; /* Texto gris */
+  cursor: pointer; /* Cursor de mano */
+  transition: all 0.2s; /* Transición suave al interactuar */
+}
+
+/* Efecto hover para resaltar un botón */
+.feedback-input:hover {
+  background-color: hsl(25, 97%, 53%); /* Cambia a color naranja */
+  color: white; /* Texto blanco */
+}
+
+/* Efecto cuando un botón está seleccionado (focus) */
+.feedback-input:focus {
+  background-color: white; /* Fondo blanco */
+  color: black; /* Texto negro */
+}
+
+/* Botón final de submit */
+button[type="submit"] {
+  background-color: hsl(25, 97%, 53%); /* Fondo naranja vibrante */
+  width: 100%; /* Ocupa todo el ancho */
+  margin-top: 20px; /* Separación superior */
+  padding: 8px 0; /* Altura del botón */
+  text-transform: uppercase; /* Convierte texto a mayúsculas */
+  border: none; /* Sin borde */
+  border-radius: 20px; /* Bordes redondeados */
+  font-weight: bold; /* Texto en negrita */
+  cursor: pointer; /* Cursor interactivo */
+  transition: all 0.3s; /* Animación suave */
+}
+
+/* Hover del botón de enviar */
+button[type="submit"]:hover {
+  background-color: white; /* Fondo blanco */
+  color: black; /* Texto negro (opcional, lo podés agregar si querés) */
+}
